@@ -12,19 +12,19 @@ namespace lidar_tracking {
 /*!
  * Main class for the node to handle the ROS interfacing.
  */
-class RosPackageTemplate
+class LidarTracking
 {
  public:
   /*!
    * Constructor.
    * @param nodeHandle the ROS node handle.
    */
-  RosPackageTemplate(ros::NodeHandle& nodeHandle);
+  LidarTracking(ros::NodeHandle& nodeHandle);
 
   /*!
    * Destructor.
    */
-  virtual ~RosPackageTemplate();
+  virtual ~LidarTracking();
 
  private:
   /*!

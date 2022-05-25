@@ -1,12 +1,12 @@
 #include <ros/ros.h>
-#include "ros_package_template/RosPackageTemplate.hpp"
+#include "lidar_tracking/lidar_tracking.hpp"
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "ros_package_template");
+  ros::init(argc, argv, "lidar_tracking");
   ros::NodeHandle nodeHandle("~");
 
-  ros_package_template::RosPackageTemplate rosPackageTemplate(nodeHandle);
+  lidar_tracking::LidarTracking lidarTracking(nodeHandle);
 
   ros::spin();
   return 0;

@@ -1,4 +1,4 @@
-#include "ros_package_template/Algorithm.hpp"
+#include "lidar_tracking/Algorithm.hpp"
 
 #include <utility>
 
@@ -6,7 +6,7 @@
 #include <boost/accumulators/statistics/mean.hpp>
 #include <boost/accumulators/statistics/count.hpp>
 
-namespace ros_package_template {
+namespace lidar_tracking {
 
 using namespace boost::accumulators;
 

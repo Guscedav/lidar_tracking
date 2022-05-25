@@ -1,11 +1,11 @@
-#include "ros_package_template/RosPackageTemplate.hpp"
+#include "lidar_tracking/lidar_tracking.hpp"
 
 // STD
 #include <string>
 
-namespace ros_package_template {
+namespace lidar_tracking {
 
-RosPackageTemplate::RosPackageTemplate(ros::NodeHandle& nodeHandle)
+LidarTracking::lidarTracking(ros::NodeHandle& nodeHandle)
     : nodeHandle_(nodeHandle)
 {
   if (!readParameters()) {

@@ -1,13 +1,13 @@
 #pragma once
 
-#include "ros_package_template/Algorithm.hpp"
+#include "lidar_tracking/Algorithm.hpp"
 
 // ROS
 #include <ros/ros.h>
 #include <sensor_msgs/Temperature.h>
 #include <std_srvs/Trigger.h>
 
-namespace ros_package_template {
+namespace lidar_tracking {
 
 /*!
  * Main class for the node to handle the ROS interfacing.

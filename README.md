@@ -1,14 +1,15 @@
 # Package Name
+Lidar Tracking package
 
 ## Overview
 
-This is a template: replace, remove, and add where required. Describe here what this package does and what it's meant for in a few sentences.
+This package uses the scan created with a velodyne lidar to calculate the position of an object in front of it. The object is then tracked to allow a follow me function with the help of another package.
 
-**Keywords:** example, package, template
-
-Or, add some keywords to the Bitbucket or GitHub repository.
+**Keywords:** lidar, tracking
 
 ### License
+
+This package is built on top of the ros_package_template see below:
 
 The source code is released under a [BSD 3-Clause license](ros_package_template/LICENSE).
 
@@ -66,44 +67,10 @@ Or better, use `rosdep`:
 To build from source, clone the latest version from this repository into your catkin workspace and compile the package using
 
 	cd catkin_workspace/src
-	git clone https://github.com/ethz-asl/ros_best_practices.git
+	git clone https://github.com/Guscedav/lidar_tracking.git
 	cd ../
 	rosdep install --from-paths . --ignore-src
 	catkin_make
-
-### Running in Docker
-
-Docker is a great way to run an application with all dependencies and libraries bundles together. 
-Make sure to [install Docker](https://docs.docker.com/get-docker/) first. 
-
-First, spin up a simple container:
-
-	docker run -ti --rm --name ros-container ros:noetic bash
-	
-This downloads the `ros:noetic` image from the Docker Hub, indicates that it requires an interactive terminal (`-t, -i`), gives it a name (`--name`), removes it after you exit the container (`--rm`) and runs a command (`bash`).
-
-Now, create a catkin workspace, clone the package, build it, done!
-
-	apt-get update && apt-get install -y git
-	mkdir -p /ws/src && cd /ws/src
-	git clone https://github.com/leggedrobotics/ros_best_practices.git
-	cd ..
-	rosdep install --from-path src
-	catkin_make
-	source devel/setup.bash
-	roslaunch ros_package_template ros_package_template.launch
-
-### Unit Tests
-
-Run the unit tests with
-
-	catkin_make run_tests_ros_package_template
-
-### Static code analysis
-
-Run the static code analysis with
-
-	catkin_make roslint_ros_package_template
 
 ## Usage
 
@@ -111,7 +78,7 @@ Describe the quickest way to run this software, for example:
 
 Run the main node with
 
-	roslaunch ros_package_template ros_package_template.launch
+	roslaunch lidar_tracking lidar_tracking.launch
 
 ## Config files
 

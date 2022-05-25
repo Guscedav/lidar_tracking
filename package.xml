@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lidar_tracking</name>
+  <version>0.1.0</version>
+  <description>This package uses a velodyne lidar to track an object in front of it.</description>
+  <maintainer email="guscedav@students.zhaw.ch">Davide Guscetti</maintainer>
+  <license>BSD</license>
+  <url type="website">https://github.com/ethz-asl/ros_best_practices</url>
+  <author email="guscedav@students.zhaw.ch">Davide Guscetti</author>
+
+  <!-- buildtool_depend: dependencies of the build process -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <!-- build_depend: dependencies only used in source files -->
+  <build_depend>boost</build_depend>
+  <!-- depend: build, export, and execution dependency -->
+  <depend>eigen</depend>
+  <depend>roscpp</depend>
+  <depend>sensor_msgs</depend>
+
+  <build_depend>roslint</build_depend>
+</package>

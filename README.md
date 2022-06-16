@@ -5,7 +5,7 @@ Lidar Tracking package
 
 This package uses the scan created with a velodyne lidar to calculate the position of an object in front of it. The object is then tracked to allow a follow me function with the help of another package.
 
-**Keywords:** lidar, tracking
+**Keywords:** lidar, tracking, follow-me, velodyne
 
 ### License
 
